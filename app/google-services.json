@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "924415376096",
+    "project_id": "the-definer",
+    "storage_bucket": "the-definer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:924415376096:android:998a4c6e96955ac3b2ae85",
+        "android_client_info": {
+          "package_name": "com.elfak.TheDefiner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "924415376096-k6vo1prd5mdqevnc95q30a2soougs94s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGD_yxu4fyxYtHR3eRO49MaRneBXpaWZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "924415376096-k6vo1prd5mdqevnc95q30a2soougs94s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:924415376096:android:fd2a46a65ddd5c3bb2ae85",
+        "android_client_info": {
+          "package_name": "elfak.mosis.thedefiner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "924415376096-k6vo1prd5mdqevnc95q30a2soougs94s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGD_yxu4fyxYtHR3eRO49MaRneBXpaWZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "924415376096-k6vo1prd5mdqevnc95q30a2soougs94s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

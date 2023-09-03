@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="elfak.mosis.thedefiner.RegistrationFragment"
+        android:label="RegistrationFragment" >
+        <action
+            android:id="@+id/action_registrationFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/userInfoFragment"
+        android:name="elfak.mosis.thedefiner.UserInfoFragment"
+        android:label="UserInfoFragment" >
+        <action
+            android:id="@+id/action_userInfoFragment_to_mapFragment"
+            app:destination="@id/mapFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_userInfoFragment_to_leaderboardFragment"
+            app:destination="@id/leaderboardFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_userInfoFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@+id/userInfoFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="elfak.mosis.thedefiner.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_homeFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_homeFragment_to_userInfoFragment"
+            app:destination="@id/userInfoFragment"
+            app:popUpTo="@+id/homeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="elfak.mosis.thedefiner.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_userInfoFragment"
+            app:destination="@id/userInfoFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="elfak.mosis.thedefiner.MapFragment"
+        android:label="MapFragment" >
+        <argument
+            android:name="latitude"
+            app:argType="float" />
+        <argument
+            android:name="longitude"
+            app:argType="float" />
+        <action
+            android:id="@+id/action_mapFragment_to_baseListFragment"
+            app:destination="@id/baseListFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/leaderboardFragment"
+        android:name="elfak.mosis.thedefiner.LeaderboardFragment"
+        android:label="LeaderboardFragment" />
+    <fragment
+        android:id="@+id/baseListFragment"
+        android:name="elfak.mosis.thedefiner.BaseListFragment"
+        android:label="BaseListFragment" >
+        <action
+            android:id="@+id/action_baseListFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+    </fragment>
+</navigation>

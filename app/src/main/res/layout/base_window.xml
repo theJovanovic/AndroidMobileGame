@@ -1,0 +1,119 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/oppUsernameTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/myProfileImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/opponentProfileImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            tools:srcCompat="@tools:sample/avatars" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/myPointsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Points: "
+            android:textColor="#FDFDFD" />
+
+        <TextView
+            android:id="@+id/myPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FDFDFD"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp">
+
+        <TextView
+            android:id="@+id/oppPointsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opponent Points: "
+            android:textColor="#FDFDFD" />
+
+        <TextView
+            android:id="@+id/opponentPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FDFDFD"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/winningChanceTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Winning chance: "
+        android:textColor="#FBFBFB" />
+
+    <Button
+        android:id="@+id/btnFight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:text="FIGHT" />
+
+    <TextView
+        android:id="@+id/fightInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="10dp"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:text="You can't fight! You are too far away!"
+        android:textColor="#FBFBFB" />
+
+    <TextView
+        android:id="@+id/fightResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="24dp"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:text=""
+        android:textColor="#FBFBFB" />
+
+</LinearLayout>
